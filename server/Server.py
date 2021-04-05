@@ -20,10 +20,10 @@ class Server:
     def split_up_work(self, n, cycles):
         numbers_per_cycle = n / cycles
         list = range(n)
-        res = []
+        result = []
         for i in range(0, n, numbers_per_cycle):
-            res.append(list[i:i + numbers_per_cycle])
-        return res
+            result.append(list[i:i + numbers_per_cycle])
+        return result
 
     # Using round robin to send the work to each available worker
     def distribute_work(self, pieces_of_work, available_workers):
