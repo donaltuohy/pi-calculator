@@ -92,8 +92,7 @@ class Server:
                 
     # Handles array of results returned from workers. Sums them together.
     # param 1: results - Array of 
-    # param 2: piece_of_work -  Array of arrays specifying the ranges that each worker should calculate pi over.
-    # return type: array of results - Each workers approximation of pi for the work given. They are added together to give the final approximation
+    # return type: Decimal
     def handle_results(self, results):
         sum = Decimal(0)
         for result in results:
