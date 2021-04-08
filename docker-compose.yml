@@ -1,0 +1,33 @@
+version: "3.3"
+services:
+  server:
+    build: ./server/
+    ports:
+      - "5000:5000"
+    networks:
+      - backend
+  worker1:
+    build: ./worker/
+    container_name: worker1
+    environment:
+      - PORT=4001
+    networks:
+      - backend
+  worker2:
+    container_name: worker2
+    build: ./worker/
+    environment:
+      - PORT=4002
+    networks:
+      - backend
+  worker3:
+    build: ./worker/
+    container_name: worker3
+    environment:
+      - PORT=4003
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: "bridge"

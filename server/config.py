@@ -1,14 +1,14 @@
 workers = [
     dict(
-        address = "http://localhost",
-        port = 5001,
+        address = "http://worker1",
+        port = 4001,
     ),
     dict(
-        address = "http://localhost",
-        port = 5002,
+        address = "http://worker2",
+        port = 4002,
     ),
     dict(
-        address = "http://localhost",
-        port = 5003,
+        address = "http://worker3",
+        port = 4003,
     )
 ]
