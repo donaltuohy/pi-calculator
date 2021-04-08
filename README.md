@@ -15,7 +15,7 @@ The server has a list of worker addresses and loops through these to check if th
 
 ## Worker
 
-The worker can be spun up multiple times and when a server sends it a a request, it is given a `start`, `end` and a `precision`. It uses the  (Bailey–Borwein–Plouffe formula)[https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula] to converge on the value of pi.
+The worker can be spun up multiple times and when a server sends it a a request, it is given a `start`, `end` and a `precision`. It uses the  [Bailey–Borwein–Plouffe formula](https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula) to converge on the value of pi.
 
 
 Running locally
