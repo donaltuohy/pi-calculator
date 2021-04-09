@@ -34,7 +34,7 @@ To test it out, send a request with a json body:
 curl --location --request POST 'http://localhost:5000/calculate' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "n":1000,
-    "x": 50000
+    "n":30,
+    "x": 5000
 }'
 ```
